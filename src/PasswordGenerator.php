@@ -4,7 +4,7 @@ namespace ASayed;
 
 class PasswordGenerator
 {
-    function generate(int $length = 10, int $digit = 1, int $specialChar = 1): string
+    public static function generate(int $length = 10, int $digit = 1, int $specialChar = 1): string
     {
         $otherLen = ($digit + $specialChar);
         $upperLen = floor(($length - $otherLen) / 2);
@@ -22,7 +22,7 @@ class PasswordGenerator
             $max = strlen($charSet['chars']) - 1;
             $len = $charSet['len'];
             for ($i = 0; $i < $len; $i++) {
-                $str .= $charSet['chars'][mt_rand(0, $max)];
+                $str .= $charSet['chars'][random_int(0, $max)];
             }
         }
         return str_shuffle($str);
