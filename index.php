@@ -7,7 +7,7 @@ public static function generate_random_password(int $length = 10, int $digit = 1
         $charSets = [
             ['len' => $upperLen, 'chars' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'],
             ['len' => $digit, 'chars' => '0123456789'],
-            ['len' => $specialChar, 'chars' => '!@#$%&*?'],
+            ['len' => $specialChar, 'chars' => '!#$%&()*+,-./:;<=>?@[\]^_{|}~'],
             ['len' => $lowerLen, 'chars' => 'abcdefghijklmnopqrstuvwxyz'],
 
         ];
