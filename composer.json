@@ -1,0 +1,19 @@
+{
+    "name": "asayed/php-random-password",
+    "description": "This is simple php function to generate random password",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ASayed\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abu Sayed",
+            "email": "sayedcsekuet@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,5 +1,10 @@
 <?php
-public static function generate_random_password(int $length = 10, int $digit = 1, int $specialChar = 1): string
+
+namespace ASayed;
+
+class PasswordGenerator
+{
+    function generate(int $length = 10, int $digit = 1, int $specialChar = 1): string
     {
         $otherLen = ($digit + $specialChar);
         $upperLen = floor(($length - $otherLen) / 2);
@@ -22,3 +27,4 @@ public static function generate_random_password(int $length = 10, int $digit = 1
         }
         return str_shuffle($str);
     }
+}
